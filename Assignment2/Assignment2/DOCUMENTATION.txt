@@ -1,0 +1,82 @@
+DOCUMENTATION:
+
+This documentation will address the constructed search engine using an AVL Tree.
+In order to store information and retrieve it efficiently the data structure that 
+is used requires an efficient search, insert and deletion algorithms.
+
+The AVL Tree is used in order to utilise it's O(log(n)) complexity with search, insertion and deletion.
+
+
+_______________________________________________________________________________
+
+Algorithm 1:
+
+===============Insertion==================
+Insertion creates a struct which is used as a node to store information within the tree.
+Pointers are set to tags right and left. This is to help visualise an AVL Tree and to help the 
+search algorithm.
+The information within the node is then passed to a search function in order to determine if it 
+contains duplicate information.
+
+The duplicate function takes the node's key variable and checks it against the top node.
+This is compared to determine if it is larger or less than the current node.
+The pointer to the left or right is then called based on this outcome to move closer to it's 
+target's possible location.
+If the target is found the target's node's frequency varible is increased by one and the new node is discarded.
+If it isn't found the node is returned back to the insertion function.
+
+This then calls the recursive private insertion function.
+In here the data is checked against existing nodes in order to determine it's position within the tree.
+The node is moved to the left each time it is smaller than the current compared node. And right whenever
+it is larger. This continues until it is at the end of the branch.
+Once at the end the branch the taller boolean is used to determine if a balance function is called.
+If this is called the scenario is determined through the LH, EH, RH macros and nodes will be repositioned
+to balance the tree. This will help maintain the efficiency of it's algorithms.
+
+Complexity
+O(log(n))^2
+
+
+
+Algorithm 2:
+
+=================Low Frequency Deletion====================
+The low frequency deletion functions utilise the preorder tranversal method. Each node is checked and 
+has it's frequency variable compared to the function's parameter. If this is below the threshold the 
+node's information is then passed along to the AVL Tree's delete function.
+
+The delete function deletes a node from the tree and rebalances if necessary.
+
+After the node is handled the function moves onto the left node. This is repeated until there are no more
+nodes. Then it traverses through the right side nodes deleting wherever the conditions are met.
+
+Complexity
+O(N)
+
+_______________________________________________________________________________
+
+Data Structures:
+AVL Tree for it's low complexity rating in regards to Search, Insertion and Deletion.
+Priority Queue for it's simplicity in regards to sorting.
+
+_______________________________________________________________________________
+
+Complexity Analysis
+
+Building up the dictionary
+O(log(n))^2
+
+Priority queue for string
+O(log(n))
+
+Rebuilding dictionary from dictionary file
+O(log(n))
+
+_______________________________________________________________________________
+
+
+In this assignment I created and adjusted several data structures in order to produce a program that
+is able to read a text file, save it's information in an AVL Tree. Then display this information when
+prompted. This was done using the most efficient data structures available to reduce processing time.
+Thus producing a swift and accurate search engine.
+

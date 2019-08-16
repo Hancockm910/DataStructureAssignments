@@ -1,0 +1,13 @@
+﻿  board.cpp
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(34): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(51): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(65): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(228): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(235): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(240): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(253): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(256): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(270): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(279): warning C4018: '<': signed/unsigned mismatch
+C:\Users\mark\Desktop\DataStructure\Assignment1\week4\board.cpp(284): warning C4018: '<': signed/unsigned mismatch
+  week4.vcxproj -> C:\Users\mark\Desktop\DataStructure\Assignment1\Debug\week4.exe
